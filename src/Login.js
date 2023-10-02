@@ -7,7 +7,7 @@ export default function Login() {
 
   return (
     <>
-      {console.log('User name---------------' + user)}
+      {console.log('User name---------------' + JSON.stringify(user))}
       <div>
         {user ? (
           <Navigate to="/dash" /> // Use Navigate to redirect

@@ -4,9 +4,9 @@ import { useUser } from './UserProvider'; // Import useUser
 import Login from './Login';
 
 function PrivateRoute({ component }) {
-  //const { user } = useUser();
-//!user
-  if (true) {
+  const { user } = useUser();
+
+  if (!user) {
     return <Navigate to="/login" />; // Use Navigate to redirect
   }
 
